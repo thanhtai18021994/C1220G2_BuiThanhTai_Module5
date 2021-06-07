@@ -13,7 +13,9 @@
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
 }
-
+a{
+  text-decoration: none;
+}
 .sidebar {
   width: 345px;
   position: fixed;
@@ -171,7 +173,7 @@ header label span {
 }
 
 main {
-  margin-top: 85px;
+  margin-top: 100px;
   padding: 2rem 1.5rem;
   background: #f1f5f9;
   min-height: calc(100vh - 90px);
