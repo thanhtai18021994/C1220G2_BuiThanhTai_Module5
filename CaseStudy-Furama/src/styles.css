@@ -345,4 +345,5 @@ td {
   outline: none;
   border: 1px solid var(--main-color);
   color: #fff;
+  min-width: 100px;
 }
