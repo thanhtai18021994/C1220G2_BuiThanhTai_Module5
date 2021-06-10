@@ -41,8 +41,8 @@ export class AppComponent implements OnInit{
       this.formRegister.value.gender,
       this.formRegister.value.phone,
       this.formRegister.value.age);
-    listRegister.push(registers);
-    this.formRegister.reset();
+      listRegister.push(registers);
+      this.formRegister.reset();
   }
 
 }

@@ -1,0 +1,22 @@
+<div class="container" xmlns="http://www.w3.org/1999/html">
+  <form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+    <div class="form-row">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name" formControlName="name">
+    </div>
+    <div class="form-row">
+      <label for="price">Price</label>
+      <input type="text" class="form-control" id="price" formControlName="price">
+    </div>
+    <div class="form-row">
+      <label for="active">active</label>
+      <input type="radio" name="status" value=true id="active" formControlName="status">
+      <label for="status">UnActive</label>
+      <input type="radio" name="status" value=false id="status" formControlName="status">
+    </div>
+    <div class="form-row">
+      <input type="submit" class="btn btn-primary" value="Create">
+    </div>
+  </form>
+</div>
+<!--group>control-->
