@@ -1,22 +1,22 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
-import {ProductClass} from '../model/product.class';
-import {ProducServiceService} from '../service/produc-service.service';
 import {ActivatedRoute} from '@angular/router';
+import {ProductClass} from '../model/product.class';
+import {ProductServiceService} from '../service/product-service.service';
 
 @Component({
-  selector: 'app-edit-product',
-  templateUrl: './edit-product.component.html',
-  styleUrls: ['./edit-product.component.css']
+  selector: 'app-product-update',
+  templateUrl: './product-update.component.html',
+  styleUrls: ['./product-update.component.css']
 })
-export class EditProductComponent implements OnInit {
+export class ProductUpdateComponent implements OnInit {
 
   productForm: FormGroup;
   product: ProductClass;
   constructor(
     private activatedRouter: ActivatedRoute,
     private fb: FormBuilder,
-    private productService: ProducServiceService
+    private productService: ProductServiceService
   ) { }
 
   ngOnInit(): void {
@@ -41,6 +41,8 @@ export class EditProductComponent implements OnInit {
 
   onSubmit(){
     const product=new ProductClass(Number(this.activatedRouter.snapshot.params['id']),this.productForm.value.name,this.productForm.value.price,this.productForm.value.description);
+    console.log(product);
     this.productService.save(product);
   }
+
 }
