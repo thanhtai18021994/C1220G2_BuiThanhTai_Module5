@@ -1,5 +1,5 @@
 <div class="control-list">
-<button class="btn">ADD NEW CUSTOMER</button>
+  <button class="btn" [routerLink]="['/customer/create']">ADD NEW CUSTOMER</button>
   <button class="btn">LIST OF CUSTOMER</button>
 </div>
 <div class="recent-grid">
@@ -23,51 +23,19 @@
             </tr>
             </thead>
             <tbody>
-            <tr>
-              <td>1</td>
-              <td>Bui Thanh Tai</td>
-              <td>Nam</td>
-              <td>Diamond</td>
-              <td>Edit</td>
-              <td>Delete</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Bui Thanh Tai</td>
-              <td>Nam</td>
-              <td>Diamond</td>
-              <td>Edit</td>
-              <td>Delete</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Bui Thanh Tai</td>
-              <td>Nam</td>
-              <td>Diamond</td>
-              <td>Edit</td>
-              <td>Delete</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Bui Thanh Tai</td>
-              <td>Nam</td>
-              <td>Diamond</td>
-              <td>Edit</td>
-              <td>Delete</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Bui Thanh Tai</td>
-              <td>Nam</td>
-              <td>Diamond</td>
+            <tr *ngFor="let customer of customers; index as i">
+              <td>{{i+1}}</td>
+              <td>{{customer.name}}</td>
+              <td>{{customer.gender}}</td>
+              <td>{{customer.typeOfCustomer.name}}</td>
               <td>Edit</td>
               <td>Delete</td>
             </tr>
             </tbody>
           </table>
         </div>
-      </div>
     </div>
+  </div>
   </div>
   <div class="customers">
     <div class="card">

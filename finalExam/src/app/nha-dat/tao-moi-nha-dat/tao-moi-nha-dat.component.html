@@ -1,0 +1,100 @@
+<form [formGroup]="nhaDatForm" (ngSubmit)="onSubmit()">
+  <div class="form-row">
+    <label for="danhMuc">DanhMuc</label>
+    <select name="" id="danhMuc" class="form-control" formControlName="danhMuc">
+      <option *ngFor="let danhMuc of danhSachDanhMuc" [ngValue]="danhMuc.ten">{{danhMuc.ten}}</option>
+    </select>
+  </div>
+  <div class="form-row">
+    <label for="vungMien">Vung Mien</label>
+    <select name="" id="vungMien" class="form-control" formControlName="vungMien">
+      <option value="">------------Chon-------------</option>
+      <option *ngFor="let vungMien of danhSachVungMien" [ngValue]="vungMien.ten">{{vungMien.ten}}</option>
+    </select>
+  </div>
+  <label> Ban la:</label>
+  <div class="form-row">
+   <div class="form-check-inline">
+     <label for="caNhan" class="form-check-label">
+       <input type="radio" formControlName="banLa" class="form-check-input" id="caNhan" value="Ca nhan">
+       Ca Nhan
+     </label>
+   </div>
+    <div class="form-check-inline">
+      <label for="congTy" class="form-check-label">
+        <input type="radio" formControlName="banLa" class="form-check-input" id="congTy" value="Cong ty">
+        Cong Ty
+      </label>
+    </div>
+  </div>
+  <label>Ban Dang tin:</label>
+  <div class="form-row">
+    <div class="form-check-inline">
+      <label for="canban" class="form-check-label">
+        <input type="radio" formControlName="banDangTin" class="form-check-input" id="canban" value="Ca nhan">
+        Can Ban
+      </label>
+    </div>
+    <div class="form-check-inline">
+      <label for="canmua" class="form-check-label">
+        <input type="radio" formControlName="banDangTin" class="form-check-input" id="canmua" value="Can mua">
+        Can Mua
+      </label>
+    </div>
+    <div class="form-check-inline">
+      <label for="chothue" class="form-check-label">
+        <input type="radio" formControlName="banDangTin" class="form-check-input" id="chothue" value="Cho thue">
+        Cho thue
+      </label>
+    </div>
+    <div class="form-check-inline">
+      <label for="canthue" class="form-check-label">
+        <input type="radio" formControlName="banDangTin" class="form-check-input" id="canthue" value="Can thue">
+       Can thue
+      </label>
+    </div>
+  </div>
+  <label>Tinh trang</label>
+  <div class="form-row">
+    <div class="form-check-inline">
+      <label for="moi" class="form-check-label">
+        <input type="radio" formControlName="tinhTrang" class="form-check-input" id="moi" value="Moi">
+        Moi
+      </label>
+    </div>
+    <div class="form-check-inline">
+      <label for="dasudung" class="form-check-label">
+        <input type="radio" formControlName="tinhTrang" class="form-check-input" id="dasudung" value="Da su dung">
+        Da su dung
+      </label>
+    </div>
+  </div>
+  <div class="form-row">
+    <label for="diaChi">Dia Chi</label>
+    <input type="text" id="diaChi" formControlName="diaChi" class="form-control">
+  </div>
+  <div class="form-row">
+    <label for="diaChi">Dien Tich</label>
+    <input type="number" id="dienTich" formControlName="dienTich" class="form-control">
+  </div>
+  <div class="form-row">
+    <label for="huong">Huong</label>
+    <select name="" id="huong" class="form-control" formControlName="huong">
+      <option value="">------------Chon-------------</option>
+      <option *ngFor="let huong of danhSachHuong" [ngValue]="huong.ten">{{huong.ten}}</option>
+    </select>
+  </div>
+  <div class="form-row">
+    <label for="tuade">Tua De</label>
+    <input type="text" id="tuade" formControlName="tuaDe" class="form-control">
+  </div>
+  <div class="form-row">
+    <label for="noiDung">Noi Dung:</label>
+    <textarea rows="5" formControlName="noiDung" class="form-control" id="noiDung">
+
+    </textarea>
+  </div>
+  <div class="form-row mt-3">
+    <input type="submit" [disabled]="!nhaDatForm.valid" value="Dang Tin">
+  </div>
+</form>

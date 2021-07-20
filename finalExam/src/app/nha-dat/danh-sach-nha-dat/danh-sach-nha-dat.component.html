@@ -1,0 +1,65 @@
+<div class="container-fluid m-2">
+<button class="btn btn-primary" [routerLink]="['/dangtin']">Dang Tin</button>
+</div>
+<div class="container-fluid">
+  <table class="table">
+    <tr>
+      <td>Dien Tich</td>
+      <td>
+        <select [(ngModel)]="dientich">
+          <option value="100">100</option>
+          <option value="100">300</option>
+          <option value="100">400</option>
+          <option value="500">500</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>Gia</td>
+      <td>
+        <select [(ngModel)]="gia" >
+          <option value="100">100</option>
+          <option value="100">300</option>
+          <option value="100">400</option>
+          <option value="500">500</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>Huong</td>
+      <td>
+        <select [(ngModel)]="huong">
+          <option value="dong">dong</option>
+          <option value="tay">tay</option>
+          <option value="nam">nam</option>
+          <option value="bac">bac</option>
+        </select>
+      </td>
+    </tr>
+  </table>
+  <button (click)="timkiemtatca()">Tim kiem</button>
+</div>
+<table class="table table-hover mt-5">
+  <thead>
+  <tr>
+    <th>Stt</th>
+    <th>Tua de</th>
+    <th>Loai bai Viet</th>
+    <th>Danh Muc</th>
+    <th>Ngay Dang</th>
+    <th>Sua</th>
+    <th>xoa</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let nhaDat of danhSachNhadat;index as i">
+    <td>{{i}}</td>
+    <td>{{nhaDat.tuaDe}}</td>
+    <td>{{nhaDat.banDangTin}}</td>
+    <td>{{nhaDat.danhMuc}}</td>
+    <td>ngay dang</td>
+    <td>Sua</td>
+    <td>Xoa</td>
+  </tr>
+  </tbody>
+</table>

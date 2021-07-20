@@ -1,0 +1,63 @@
+<div id="create">
+  <div class="form-row" style="padding:0 2rem">
+    <h2>ADD NEW CUSTOMER</h2>
+    <button style="margin-top: 2rem">lIST CUSTOMERS</button>
+  </div>
+  <form *ngIf="formCustomer" [formGroup]="formCustomer" class="form-group" (ngSubmit)="onUpdate()">
+    <div class="form-row">
+      <div class="form-item col3" >
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" placeholder="Vd: Andrew ..." formControlName="name">
+        <small class="error-tag" ></small>
+      </div>
+      <div class="form-item col3" >
+        <label for="code">Code:</label>
+        <input type="text" id="code" placeholder="Vd: Code ..." formControlName="code">
+        <small class="error-tag"></small>
+      </div>
+      <div class="form-item col6">
+        <label for="email">Email:</label>
+        <input type="text" id="email" placeholder="Vd: Andrew ..." formControlName="email">
+        <small class="error-tag"></small>
+      </div>
+    </div>
+    <div class="form-row ">
+      <div class="form-item col4" >
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" placeholder="Vd: Andrew ..." formControlName="birthday">
+        <small class="error-tag"></small>
+      </div>
+      <div class="form-item col4">
+        <label for="idCard">ID Card:</label>
+        <input type="text" id="idCard" placeholder="Vd: Andrew ..." formControlName="idCard">
+        <small class="error-tag"></small>
+      </div>
+      <div class="form-item col4">
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" placeholder="Vd: Andrew ..." formControlName="phone">
+        <small class="error-tag"> </small>
+      </div>
+    </div>
+    <div class="form-row ">
+      <div class="form-item col6" >
+        <label for="address">Address : </label>
+        <input type="text" id="address" placeholder="Vd: Andrew ..." formControlName="address">
+        <small class="error-tag"></small>
+      </div>
+      <div class="form-item col6">
+        <label for="typeCustomer">Type Customer:</label>
+        <select id="typeCustomer" class="form-control" formControlName="typeOfCustomer">
+          <ng-container *ngFor="let typeCustomer of typeCustomers">
+            <option [value]="typeCustomer.name">{{typeCustomer.name}}</option>
+          </ng-container>
+        </select>
+        <small class="error-tag"></small>
+      </div>
+    </div>
+    <div class="form-row">
+      <button type="submit">Save</button>
+      <button type="button" (click)="returnHomeCustomer()">Cancel</button>
+    </div>
+  </form>
+</div>
+

@@ -1,0 +1,142 @@
+{
+  "customer": [
+    {
+      "code": "Nguyen Van Hai",
+      "name": "Nguyen Van Hai",
+      "typeOfCustomer": "Platinum",
+      "birthday": "2005-08-02",
+      "email": "duchau@gmail.com",
+      "phone": "0909090911",
+      "idCard": "201732015",
+      "address": "Đà Nẵng",
+      "gender": "Male",
+      "id": 2
+    },
+    {
+      "code": "Nguyen Van B",
+      "name": "Nguyen Van B",
+      "typeOfCustomer": "Member",
+      "birthday": "2005-08-02",
+      "email": "duchau@gmail.com",
+      "phone": "0909090911",
+      "idCard": "201732015",
+      "address": "Đà Nẵng",
+      "gender": "Female",
+      "id": 3
+    },
+    {
+      "code": "Nguyen Van C",
+      "name": "Nguyen Van C",
+      "typeOfCustomer": "Platinum",
+      "birthday": "2005-08-02",
+      "email": "duchau@gmail.com",
+      "phone": "0909090911",
+      "idCard": "201732015",
+      "address": "Đà Nẵng",
+      "gender": "LGBT",
+      "id": 4
+    }
+  ],
+  "customerType": [
+    {
+      "id": 1,
+      "name": "Diamond"
+    },
+    {
+      "id": 2,
+      "name": "Platinum"
+    },
+    {
+      "id": 3,
+      "name": "Gold"
+    },
+    {
+      "id": 4,
+      "name": "Silver"
+    },
+    {
+      "id": 5,
+      "name": "Member"
+    }
+  ],
+  "employee": [
+    {
+      "id": 1,
+      "code": "NV-0001",
+      "name": "Nguyen Thanh Cong",
+      "birthday": "1991-09-10",
+      "idCard": "201646779",
+      "salary": 1000,
+      "phone": "0909090911",
+      "email": "thanhcong@gmail.com",
+      "address": "Đà Nẵng",
+      "position": "Director",
+      "education": 1,
+      "department": 1
+    },
+    {
+      "id": 2,
+      "code": "NV-0002",
+      "name": "Nguyen Duc Hau",
+      "birthday": "1998-02-14",
+      "idCard": "201202203",
+      "salary": 999,
+      "phone": "0909090922",
+      "email": "duchau@gmail.com",
+      "address": "Đà Nẵng",
+      "position": "Director",
+      "education": 2,
+      "department": 2
+    },
+    {
+      "id": 3,
+      "code": "NV-0003",
+      "name": "Le Duc Sang",
+      "birthday": "1992-09-09",
+      "idCard": "999999999",
+      "salary": 999,
+      "phone": "0909999999",
+      "email": "sanglevippro@gmail.com",
+      "address": "Quang Nam",
+      "position": "Director",
+      "education": 3,
+      "department": 3
+    },
+    {
+      "id": 4,
+      "code": "NV-0004",
+      "name": "Tran Hong Gia Dong",
+      "birthday": "1994-04-04",
+      "idCard": "444333222",
+      "salary": 998,
+      "phone": "0909444444",
+      "email": "thgiadong@gmail.com",
+      "address": "Da Nang",
+      "position": "Director",
+      "education": 4,
+      "department": 4
+    }
+  ],
+  "position": [
+    {
+      "id": 1,
+      "name": "Director"
+    },
+    {
+      "id": 2,
+      "name": "Manager"
+    },
+    {
+      "id": 3,
+      "name": "Supervisor"
+    },
+    {
+      "id": 4,
+      "name": "Receptionist"
+    },
+    {
+      "id": 5,
+      "name": "Housekeeper"
+    }
+  ]
+}

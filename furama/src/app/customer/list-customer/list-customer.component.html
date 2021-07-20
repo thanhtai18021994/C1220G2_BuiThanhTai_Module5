@@ -1,0 +1,120 @@
+<div class="control-list">
+  <button class="btn" [routerLink]="['/customer/create']">ADD NEW CUSTOMER</button>
+  <div class="search-wrapper">
+    <span class="las la-search"></span>
+    <input type="search" placeholder="Search Here" (input)="search(element.value)" #element>
+  </div>
+  <button class="btn">LIST OF CUSTOMER</button>
+</div>
+<div class="recent-grid">
+  <div class="projects">
+    <div class="card">
+      <div class="card-header">
+        <h2>Recent Customers</h2>
+        <button>See All <span class="las la-arrow-right"></span></button>
+      </div>
+      <div class="card-body">
+        <div class="table-responsive">
+          <table width=100%>
+            <thead>
+            <tr>
+              <td>STT</td>
+              <td>Name</td>
+              <td>Gender</td>
+              <td>Code</td>
+              <td>Type Customer</td>
+              <td>Edit</td>
+              <td>Delete</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let customer of customers|paginate: config; index as i">
+              <td>{{i+1}}</td>
+              <td>{{customer.name}}</td>
+              <td>{{customer.gender}}</td>
+              <td>{{customer.code}}</td>
+              <td>{{customer.typeOfCustomer}}</td>
+              <td [routerLink]="['/customer/update',customer.id]">Edit</td>
+              <td (click)="delete(customer.id)">Delete</td>
+            </tr>
+            </tbody>
+          </table>
+          <pagination-controls (pageChange)="pageChanged($event)"></pagination-controls>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="customers">
+    <div class="card">
+      <div class="card-header">
+        <h3>Recent customer</h3>
+      </div>
+      <div class="card-body">
+        <div class="customer">
+          <div class="infor">
+            <img src="assets/images/download.jpg" alt="" width="40px" height="40px">
+            <div>
+              <h4>Bui Thanh tai</h4>
+              <small>Diamond</small>
+            </div>
+          </div>
+          <div class="contact">
+            <span class="las la-user-circle"></span>
+            <span class="las la-comment"></span>
+            <span class="las la-phone"></span>
+          </div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="customer">
+          <div class="infor">
+            <img src="assets/images/download.jpg" alt="" width="40px" height="40px">
+            <div>
+              <h4>Bui Thanh tai</h4>
+              <small>Diamond</small>
+            </div>
+          </div>
+          <div class="contact">
+            <span class="las la-user-circle"></span>
+            <span class="las la-comment"></span>
+            <span class="las la-phone"></span>
+          </div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="customer">
+          <div class="infor">
+            <img src="assets/images/download.jpg" alt="" width="40px" height="40px">
+            <div>
+              <h4>Bui Thanh tai</h4>
+              <small>Diamond</small>
+            </div>
+          </div>
+          <div class="contact">
+            <span class="las la-user-circle"></span>
+            <span class="las la-comment"></span>
+            <span class="las la-phone"></span>
+          </div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="customer">
+          <div class="infor">
+            <img src="assets/images/download.jpg" alt="" width="40px" height="40px">
+            <div>
+              <h4>Bui Thanh tai</h4>
+              <small>Diamond</small>
+            </div>
+          </div>
+          <div class="contact">
+            <span class="las la-user-circle"></span>
+            <span class="las la-comment"></span>
+            <span class="las la-phone"></span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+

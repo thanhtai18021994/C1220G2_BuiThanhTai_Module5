@@ -1,0 +1,170 @@
+{
+  "nhaDat": [
+    {
+      "id": 1,
+      "danhMuc": "Nha Dat",
+      "banDangTin": "Can ban",
+      "vungMien": "Ha Noi",
+      "banLa": "Ca nhan",
+      "tinhTrang": "Moi",
+      "diaChi": "79 Nguyen Tat Thanh",
+      "dienTich": 900,
+      "huong": "dong",
+      "tuaDe": "Ban nha",
+      "noiDung": "Co nha can ban",
+      "gia": 400
+    },
+    {
+      "id": 2,
+      "danhMuc": "Nha Dat",
+      "banDangTin": "Can ban",
+      "vungMien": "Ha Noi",
+      "banLa": "Ca nhan",
+      "tinhTrang": "Moi",
+      "diaChi": "79 Nguyen Tat Thanh",
+      "dienTich": 900,
+      "huong": "dong",
+      "tuaDe": "Ban nha",
+      "noiDung": "Co nha can ban",
+      "gia": 400
+    },
+    {
+      "id": 3,
+      "danhMuc": "Nha Dat",
+      "banDangTin": "Can ban",
+      "vungMien": "Ha Noi",
+      "banLa": "Ca nhan",
+      "tinhTrang": "Moi",
+      "diaChi": "79 Nguyen Tat Thanh",
+      "dienTich": 900,
+      "huong": "dong",
+      "tuaDe": "Ban nha",
+      "noiDung": "Co nha can ban",
+      "gia": 400
+    },
+    {
+      "id": 4,
+      "danhMuc": "Nha Dat",
+      "banDangTin": "Can ban",
+      "vungMien": "Ha Noi",
+      "banLa": "Ca nhan",
+      "tinhTrang": "Moi",
+      "diaChi": "79 Nguyen Tat Thanh",
+      "dienTich": 900,
+      "huong": "dong",
+      "tuaDe": "Ban nha",
+      "noiDung": "Co nha can ban",
+      "gia": 400
+    },
+    {
+      "id": 5,
+      "danhMuc": "Nha Dat",
+      "banDangTin": "Can ban",
+      "vungMien": "Ha Noi",
+      "banLa": "Ca nhan",
+      "tinhTrang": "Moi",
+      "diaChi": "79 Nguyen Tat Thanh",
+      "dienTich": 900,
+      "huong": "dong",
+      "tuaDe": "Ban nha",
+      "noiDung": "Co nha can ban",
+      "gia": 400
+    },
+    {
+      "id": 6,
+      "danhMuc": "Nha Dat",
+      "banDangTin": "Can ban",
+      "vungMien": "Ha Noi",
+      "banLa": "Ca nhan",
+      "tinhTrang": "Moi",
+      "diaChi": "79 Nguyen Tat Thanh",
+      "dienTich": 900,
+      "huong": "dong",
+      "tuaDe": "Ban nha",
+      "noiDung": "Co nha can ban",
+      "gia": 400
+    },
+    {
+      "danhMuc": "Da nang",
+      "banDangTin": "Ca nhan",
+      "vungMien": "",
+      "banLa": "Ca nhan",
+      "tinhTrang": "Da su dung",
+      "diaChi": "713 Nguyen tat thanh",
+      "dienTich": 100,
+      "huong": "Dong",
+      "tuaDe": "Ban nha",
+      "noiDung": "abc",
+      "gia": "",
+      "id": 7
+    },
+    {
+      "danhMuc": "Nha Dat",
+      "banDangTin": "Can mua",
+      "vungMien": "Ha Noi",
+      "banLa": "Cong ty",
+      "tinhTrang": "Da su dung",
+      "diaChi": "713 Nguyen tat thanh",
+      "dienTich": 55,
+      "huong": "Dong",
+      "tuaDe": "Ban nha",
+      "noiDung": "jkdkad",
+      "gia": "",
+      "id": 8
+    }
+  ],
+  "danhMuc": [
+    {
+      "id": 1,
+      "ten": "Nha Dat"
+    },
+    {
+      "id": 2,
+      "ten": "Nha vuon"
+    },
+    {
+      "id": 3,
+      "ten": "Khach san"
+    },
+    {
+      "id": 4,
+      "ten": "Resort"
+    }
+  ],
+  "vungMien": [
+    {
+      "id": 1,
+      "ten": "Ha Noi"
+    },
+    {
+      "id": 2,
+      "ten": "Da nang"
+    },
+    {
+      "id": 3,
+      "ten": "Sai gon"
+    },
+    {
+      "id": 4,
+      "ten": "Khac"
+    }
+  ],
+  "huong": [
+    {
+      "id": 1,
+      "ten": "Dong"
+    },
+    {
+      "id": 2,
+      "ten": "Tay"
+    },
+    {
+      "id": 3,
+      "ten": "Nam"
+    },
+    {
+      "id": 4,
+      "ten": "Bac"
+    }
+  ]
+}
